@@ -1,0 +1,5 @@
+libopenblas-dev
+gfortran
+python3-dev
+libxml2-dev
+libxslt1-dev

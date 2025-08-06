@@ -1,0 +1,10 @@
+gene-analysis-toolkit/
+├── app.py                         # Main application (renamed from app_.py)
+├── Design_Primer.py               # Primer design module
+├── enrich_analysis_enhanced.py    # Enrichment analysis module
+├── gene_annotations.py            # Annotation module
+├── requirements.txt               # Dependencies
+├── LICENSE                        # MIT License file
+├── README.md                      # Comprehensive documentation
+└── .streamlit/
+    └── config.toml                # Streamlit configuration
