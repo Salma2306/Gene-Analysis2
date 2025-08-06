@@ -2,7 +2,9 @@ import streamlit as st
 import requests
 import pandas as pd
 from datetime import datetime
-from Bio.SeqUtils import gc_fraction as GC, MeltingTemp as mt
+from Bio.SeqUtils import GC
+from Bio.SeqUtils import MeltingTemp as mt
+from Bio.Seq import Seq
 from Bio import Entrez, SeqIO
 from Bio.Seq import Seq
 from io import StringIO
