@@ -102,7 +102,7 @@ def display_enrichment_results(output_dir):
         if os.path.exists(plot_path):
             with cols[col_idx % 2]:
                 st.image(plot_path, 
-                        use_column_width=True,
+                        use_container_width=True,
                         caption=f"{db_name.replace('_', ' ')} Enrichment")
             col_idx += 1
     
@@ -168,7 +168,7 @@ def safe_primer_display_and_download():
 # Sidebar navigation
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/2772/2772128.png", 
-             use_column_width=True)
+             use_container_width=True)
     st.title("Gene Analysis Toolkit")
     selected = option_menu(
         menu_title=None,
@@ -188,7 +188,7 @@ if selected == "Home":
     3. **Primer Design** - Biologically validated PCR primers
     """)
     st.image("https://www.genome.gov/sites/default/files/tg/en/illustration/dna_sequence.jpg", 
-             use_column_width=True)
+             use_container_width=True)
 
 # Gene Annotation Tool
 elif selected == "Gene Annotation":
@@ -328,6 +328,7 @@ st.markdown("""
 [Report issues](mailto:Salmaloukman37@gmail.com)
 
 """)
+
 
 
 
