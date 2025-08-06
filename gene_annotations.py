@@ -14,6 +14,8 @@ from datetime import datetime
 import json
 import sys
 from Bio import Entrez
+Entrez.email = "salmaloukman37@gmail.com"  # Replace with your email
+
 
 # Suppress warnings
 warnings.filterwarnings("ignore")
