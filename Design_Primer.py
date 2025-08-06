@@ -2,16 +2,20 @@ import streamlit as st
 import requests
 import pandas as pd
 from datetime import datetime
-from Bio.SeqUtils import GC
 from Bio.SeqUtils import MeltingTemp as mt
 from Bio.Seq import Seq
 from Bio import Entrez, SeqIO
-from Bio.Seq import Seq
 from io import StringIO
 import re
 import random
 import time
 import socket
+
+# 🧪 GC content calculator (since Bio.SeqUtils.GC is removed)
+def GC(seq):
+    seq = seq.upper()
+    gc_count = seq.count("G") + seq.count("C")
+    return gc_count / len(seq) if len(seq) > 0 else 0
 
 def run_primer_design():
     """Main primer design function to be called from Streamlit app"""
